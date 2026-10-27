@@ -11,7 +11,21 @@ import datetime
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+st.markdown("""
+<style>
+#MainMenu {
+    visibility: hidden;
+}
 
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+</style>
+""", unsafe_allow_html=True)
 # Local modules
 import weather_api
 import utils
