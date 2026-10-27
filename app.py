@@ -33,11 +33,22 @@ import utils
 # ---------------------------------------------------------
 # 1. Streamlit Page Configuration
 # ---------------------------------------------------------
+import streamlit as st
+st.markdown("""
+<style>
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+</style>
+""", unsafe_allow_html=True)
 st.set_page_config(
-    page_title="WeatherScope | Live Weather & 7-Day Forecast",
-    page_icon="⛅",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    page_title="weather_forecast",
+    page_icon="weather_icon.png",
+    layout="wide"
 )
 
 # ---------------------------------------------------------
